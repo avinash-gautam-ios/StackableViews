@@ -1,0 +1,6 @@
+framework module Pods_StackableView {
+  umbrella header "Pods-StackableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,722 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40FA685AFDB06A26FA8C3BE2 /* Pods_StackableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 583C59B999B5D13911A69E56 /* Pods_StackableView.framework */; };
+		DE5ED54B268067AF00B4B44C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED54A268067AF00B4B44C /* AppDelegate.swift */; };
+		DE5ED54D268067AF00B4B44C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED54C268067AF00B4B44C /* SceneDelegate.swift */; };
+		DE5ED54F268067AF00B4B44C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED54E268067AF00B4B44C /* ViewController.swift */; };
+		DE5ED552268067AF00B4B44C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5ED550268067AF00B4B44C /* Main.storyboard */; };
+		DE5ED554268067B100B4B44C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE5ED553268067B100B4B44C /* Assets.xcassets */; };
+		DE5ED557268067B100B4B44C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5ED555268067B100B4B44C /* LaunchScreen.storyboard */; };
+		DE5ED58526806C7D00B4B44C /* UIStackableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED58426806C7D00B4B44C /* UIStackableController.swift */; };
+		DE5ED58B2680700200B4B44C /* UIStackable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED58A2680700200B4B44C /* UIStackable.swift */; };
+		DE5ED5972680858400B4B44C /* UIBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5962680858400B4B44C /* UIBottomSheetView.swift */; };
+		DE5ED59C268098AA00B4B44C /* UIStackableControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED59B268098AA00B4B44C /* UIStackableControllerConfiguration.swift */; };
+		DE5ED5A126809B0900B4B44C /* UIStackableConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5A026809B0900B4B44C /* UIStackableConfiguration.swift */; };
+		DE5ED5BE2680AFB900B4B44C /* UIStackableState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5BD2680AFB900B4B44C /* UIStackableState.swift */; };
+		DE5ED5C32680B19300B4B44C /* UIStackableControllerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5C22680B19300B4B44C /* UIStackableControllerError.swift */; };
+		DE5ED5C82680B3F600B4B44C /* UIStackableConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5C72680B3F600B4B44C /* UIStackableConstants.swift */; };
+		DE5ED5D82680D80500B4B44C /* UIStackedItemsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5D72680D80500B4B44C /* UIStackedItemsDatasource.swift */; };
+		DE5ED5E02680F64800B4B44C /* UIStackableContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5DF2680F64800B4B44C /* UIStackableContainerView.swift */; };
+		DE5ED5E5268120AD00B4B44C /* DefaultStackableItemConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5E4268120AD00B4B44C /* DefaultStackableItemConfiguration.swift */; };
+		DE5ED5ED2681219E00B4B44C /* DefaultStackableControllerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5EC2681219E00B4B44C /* DefaultStackableControllerConfiguration.swift */; };
+		DE5ED5F52681223C00B4B44C /* UIStackableContainerViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5ED5F42681223C00B4B44C /* UIStackableContainerViewConfiguration.swift */; };
+		DEAE9D8026825AFC00B8C2CF /* UIStackedItemsDatasourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE9D7F26825AFC00B8C2CF /* UIStackedItemsDatasourceTests.swift */; };
+		DEAE9D8826825C1100B8C2CF /* UIStackableMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE9D8726825C1100B8C2CF /* UIStackableMocks.swift */; };
+		DEAE9D93268265B600B8C2CF /* UIStackableControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE9D92268265B600B8C2CF /* UIStackableControllerTests.swift */; };
+		DEAE9D9D2682817600B8C2CF /* EampleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEAE9D9C2682817600B8C2CF /* EampleColors.swift */; };
+		DED3E3F126822F1700C35C8C /* ASampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3E3F026822F1700C35C8C /* ASampleViewController.swift */; };
+		DED3E3F626822F2600C35C8C /* BSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3E3F526822F2600C35C8C /* BSampleViewController.swift */; };
+		DED3E3FB26822F3500C35C8C /* CSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3E3FA26822F3500C35C8C /* CSampleViewController.swift */; };
+		DF234FCB07D055C1CD4C5C24 /* Pods_StackableViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C31E8550337F91D983AF12A /* Pods_StackableViewTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE5ED55E268067B100B4B44C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5ED53F268067AF00B4B44C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5ED546268067AF00B4B44C;
+			remoteInfo = StackableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031B1F058A6AF8C25644E75A /* Pods-StackableViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableViewUITests.release.xcconfig"; path = "Target Support Files/Pods-StackableViewUITests/Pods-StackableViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		156DBAEAA3793A46E39F56A2 /* Pods-StackableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableView.debug.xcconfig"; path = "Target Support Files/Pods-StackableView/Pods-StackableView.debug.xcconfig"; sourceTree = "<group>"; };
+		297860DA048BFCF3FF1B8F9D /* Pods-StackableViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableViewTests.debug.xcconfig"; path = "Target Support Files/Pods-StackableViewTests/Pods-StackableViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BB584509D3BA4DB73670873 /* Pods-StackableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableView.release.xcconfig"; path = "Target Support Files/Pods-StackableView/Pods-StackableView.release.xcconfig"; sourceTree = "<group>"; };
+		505C4ADC2EE33B50A510FEBD /* Pods_StackableViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackableViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		583C59B999B5D13911A69E56 /* Pods_StackableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C31E8550337F91D983AF12A /* Pods_StackableViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackableViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		995F8DF7AFB320B6EBE70C48 /* Pods-StackableViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableViewTests.release.xcconfig"; path = "Target Support Files/Pods-StackableViewTests/Pods-StackableViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD1C3BF41C90B471428C077C /* Pods-StackableViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackableViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-StackableViewUITests/Pods-StackableViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DE5ED547268067AF00B4B44C /* StackableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5ED54A268067AF00B4B44C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE5ED54C268067AF00B4B44C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DE5ED54E268067AF00B4B44C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5ED551268067AF00B4B44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5ED553268067B100B4B44C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE5ED556268067B100B4B44C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5ED558268067B100B4B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5ED55D268067B100B4B44C /* StackableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5ED563268067B100B4B44C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5ED58426806C7D00B4B44C /* UIStackableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableController.swift; sourceTree = "<group>"; };
+		DE5ED58A2680700200B4B44C /* UIStackable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackable.swift; sourceTree = "<group>"; };
+		DE5ED5962680858400B4B44C /* UIBottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBottomSheetView.swift; sourceTree = "<group>"; };
+		DE5ED59B268098AA00B4B44C /* UIStackableControllerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableControllerConfiguration.swift; sourceTree = "<group>"; };
+		DE5ED5A026809B0900B4B44C /* UIStackableConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableConfiguration.swift; sourceTree = "<group>"; };
+		DE5ED5BD2680AFB900B4B44C /* UIStackableState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableState.swift; sourceTree = "<group>"; };
+		DE5ED5C22680B19300B4B44C /* UIStackableControllerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableControllerError.swift; sourceTree = "<group>"; };
+		DE5ED5C72680B3F600B4B44C /* UIStackableConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableConstants.swift; sourceTree = "<group>"; };
+		DE5ED5D72680D80500B4B44C /* UIStackedItemsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackedItemsDatasource.swift; sourceTree = "<group>"; };
+		DE5ED5DF2680F64800B4B44C /* UIStackableContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableContainerView.swift; sourceTree = "<group>"; };
+		DE5ED5E4268120AD00B4B44C /* DefaultStackableItemConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStackableItemConfiguration.swift; sourceTree = "<group>"; };
+		DE5ED5EC2681219E00B4B44C /* DefaultStackableControllerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultStackableControllerConfiguration.swift; sourceTree = "<group>"; };
+		DE5ED5F42681223C00B4B44C /* UIStackableContainerViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableContainerViewConfiguration.swift; sourceTree = "<group>"; };
+		DEAE9D7F26825AFC00B8C2CF /* UIStackedItemsDatasourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackedItemsDatasourceTests.swift; sourceTree = "<group>"; };
+		DEAE9D8726825C1100B8C2CF /* UIStackableMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableMocks.swift; sourceTree = "<group>"; };
+		DEAE9D92268265B600B8C2CF /* UIStackableControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackableControllerTests.swift; sourceTree = "<group>"; };
+		DEAE9D9C2682817600B8C2CF /* EampleColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EampleColors.swift; sourceTree = "<group>"; };
+		DED3E3F026822F1700C35C8C /* ASampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASampleViewController.swift; sourceTree = "<group>"; };
+		DED3E3F526822F2600C35C8C /* BSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSampleViewController.swift; sourceTree = "<group>"; };
+		DED3E3FA26822F3500C35C8C /* CSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSampleViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5ED544268067AF00B4B44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40FA685AFDB06A26FA8C3BE2 /* Pods_StackableView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5ED55A268067B100B4B44C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF234FCB07D055C1CD4C5C24 /* Pods_StackableViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE5ED53E268067AF00B4B44C = {
+			isa = PBXGroup;
+			children = (
+				DE5ED549268067AF00B4B44C /* StackableView */,
+				DE5ED560268067B100B4B44C /* StackableViewTests */,
+				DE5ED548268067AF00B4B44C /* Products */,
+				E99A1F67FF8B723397E97004 /* Pods */,
+				EE21AAF7E861473B4429BB14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5ED548268067AF00B4B44C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED547268067AF00B4B44C /* StackableView.app */,
+				DE5ED55D268067B100B4B44C /* StackableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5ED549268067AF00B4B44C /* StackableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED58926806FF000B4B44C /* StackableComponent */,
+				DED3E3FF26822F3E00C35C8C /* Example */,
+				DE5ED54A268067AF00B4B44C /* AppDelegate.swift */,
+				DE5ED54C268067AF00B4B44C /* SceneDelegate.swift */,
+				DE5ED54E268067AF00B4B44C /* ViewController.swift */,
+				DE5ED5962680858400B4B44C /* UIBottomSheetView.swift */,
+				DE5ED550268067AF00B4B44C /* Main.storyboard */,
+				DE5ED553268067B100B4B44C /* Assets.xcassets */,
+				DE5ED555268067B100B4B44C /* LaunchScreen.storyboard */,
+				DE5ED558268067B100B4B44C /* Info.plist */,
+			);
+			path = StackableView;
+			sourceTree = "<group>";
+		};
+		DE5ED560268067B100B4B44C /* StackableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE9D7326825A1200B8C2CF /* StackableView */,
+				DE5ED563268067B100B4B44C /* Info.plist */,
+			);
+			path = StackableViewTests;
+			sourceTree = "<group>";
+		};
+		DE5ED58926806FF000B4B44C /* StackableComponent */ = {
+			isa = PBXGroup;
+			children = (
+				DED3E3C426820E2700C35C8C /* Stackable */,
+				DED3E3D726820EF000C35C8C /* StackableContainer */,
+				DED3E3C526820E3200C35C8C /* StackableController */,
+				DED3E3D326820ED300C35C8C /* StackableConstants */,
+				DED3E3D826820F0900C35C8C /* DefaultConfigurations */,
+			);
+			path = StackableComponent;
+			sourceTree = "<group>";
+		};
+		DEAE9D7326825A1200B8C2CF /* StackableView */ = {
+			isa = PBXGroup;
+			children = (
+				DEAE9D7F26825AFC00B8C2CF /* UIStackedItemsDatasourceTests.swift */,
+				DEAE9D92268265B600B8C2CF /* UIStackableControllerTests.swift */,
+				DEAE9D8726825C1100B8C2CF /* UIStackableMocks.swift */,
+			);
+			path = StackableView;
+			sourceTree = "<group>";
+		};
+		DED3E3C426820E2700C35C8C /* Stackable */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED58A2680700200B4B44C /* UIStackable.swift */,
+				DE5ED5BD2680AFB900B4B44C /* UIStackableState.swift */,
+				DE5ED5A026809B0900B4B44C /* UIStackableConfiguration.swift */,
+			);
+			path = Stackable;
+			sourceTree = "<group>";
+		};
+		DED3E3C526820E3200C35C8C /* StackableController */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED58426806C7D00B4B44C /* UIStackableController.swift */,
+				DE5ED59B268098AA00B4B44C /* UIStackableControllerConfiguration.swift */,
+			);
+			path = StackableController;
+			sourceTree = "<group>";
+		};
+		DED3E3D326820ED300C35C8C /* StackableConstants */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED5C72680B3F600B4B44C /* UIStackableConstants.swift */,
+				DE5ED5C22680B19300B4B44C /* UIStackableControllerError.swift */,
+			);
+			path = StackableConstants;
+			sourceTree = "<group>";
+		};
+		DED3E3D726820EF000C35C8C /* StackableContainer */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED5DF2680F64800B4B44C /* UIStackableContainerView.swift */,
+				DE5ED5D72680D80500B4B44C /* UIStackedItemsDatasource.swift */,
+				DE5ED5F42681223C00B4B44C /* UIStackableContainerViewConfiguration.swift */,
+			);
+			path = StackableContainer;
+			sourceTree = "<group>";
+		};
+		DED3E3D826820F0900C35C8C /* DefaultConfigurations */ = {
+			isa = PBXGroup;
+			children = (
+				DE5ED5EC2681219E00B4B44C /* DefaultStackableControllerConfiguration.swift */,
+				DE5ED5E4268120AD00B4B44C /* DefaultStackableItemConfiguration.swift */,
+			);
+			path = DefaultConfigurations;
+			sourceTree = "<group>";
+		};
+		DED3E3FF26822F3E00C35C8C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				DED3E3F026822F1700C35C8C /* ASampleViewController.swift */,
+				DED3E3F526822F2600C35C8C /* BSampleViewController.swift */,
+				DED3E3FA26822F3500C35C8C /* CSampleViewController.swift */,
+				DEAE9D9C2682817600B8C2CF /* EampleColors.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		E99A1F67FF8B723397E97004 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				156DBAEAA3793A46E39F56A2 /* Pods-StackableView.debug.xcconfig */,
+				3BB584509D3BA4DB73670873 /* Pods-StackableView.release.xcconfig */,
+				297860DA048BFCF3FF1B8F9D /* Pods-StackableViewTests.debug.xcconfig */,
+				995F8DF7AFB320B6EBE70C48 /* Pods-StackableViewTests.release.xcconfig */,
+				AD1C3BF41C90B471428C077C /* Pods-StackableViewUITests.debug.xcconfig */,
+				031B1F058A6AF8C25644E75A /* Pods-StackableViewUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE21AAF7E861473B4429BB14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				583C59B999B5D13911A69E56 /* Pods_StackableView.framework */,
+				6C31E8550337F91D983AF12A /* Pods_StackableViewTests.framework */,
+				505C4ADC2EE33B50A510FEBD /* Pods_StackableViewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5ED546268067AF00B4B44C /* StackableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5ED571268067B100B4B44C /* Build configuration list for PBXNativeTarget "StackableView" */;
+			buildPhases = (
+				4BE01210778B99074D7AEDCE /* [CP] Check Pods Manifest.lock */,
+				DE5ED543268067AF00B4B44C /* Sources */,
+				DE5ED544268067AF00B4B44C /* Frameworks */,
+				DE5ED545268067AF00B4B44C /* Resources */,
+				66BC1E99B7ACD01EF53A9167 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackableView;
+			productName = StackableView;
+			productReference = DE5ED547268067AF00B4B44C /* StackableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE5ED55C268067B100B4B44C /* StackableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5ED574268067B100B4B44C /* Build configuration list for PBXNativeTarget "StackableViewTests" */;
+			buildPhases = (
+				E31AB229B68004546DB78EB5 /* [CP] Check Pods Manifest.lock */,
+				DE5ED559268067B100B4B44C /* Sources */,
+				DE5ED55A268067B100B4B44C /* Frameworks */,
+				DE5ED55B268067B100B4B44C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5ED55F268067B100B4B44C /* PBXTargetDependency */,
+			);
+			name = StackableViewTests;
+			productName = StackableViewTests;
+			productReference = DE5ED55D268067B100B4B44C /* StackableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE5ED53F268067AF00B4B44C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DE5ED546268067AF00B4B44C = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					DE5ED55C268067B100B4B44C = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = DE5ED546268067AF00B4B44C;
+					};
+				};
+			};
+			buildConfigurationList = DE5ED542268067AF00B4B44C /* Build configuration list for PBXProject "StackableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE5ED53E268067AF00B4B44C;
+			productRefGroup = DE5ED548268067AF00B4B44C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5ED546268067AF00B4B44C /* StackableView */,
+				DE5ED55C268067B100B4B44C /* StackableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5ED545268067AF00B4B44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5ED557268067B100B4B44C /* LaunchScreen.storyboard in Resources */,
+				DE5ED554268067B100B4B44C /* Assets.xcassets in Resources */,
+				DE5ED552268067AF00B4B44C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5ED55B268067B100B4B44C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BE01210778B99074D7AEDCE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66BC1E99B7ACD01EF53A9167 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StackableView/Pods-StackableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StackableView/Pods-StackableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StackableView/Pods-StackableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31AB229B68004546DB78EB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackableViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5ED543268067AF00B4B44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED3E3FB26822F3500C35C8C /* CSampleViewController.swift in Sources */,
+				DE5ED59C268098AA00B4B44C /* UIStackableControllerConfiguration.swift in Sources */,
+				DED3E3F626822F2600C35C8C /* BSampleViewController.swift in Sources */,
+				DED3E3F126822F1700C35C8C /* ASampleViewController.swift in Sources */,
+				DE5ED5BE2680AFB900B4B44C /* UIStackableState.swift in Sources */,
+				DE5ED5ED2681219E00B4B44C /* DefaultStackableControllerConfiguration.swift in Sources */,
+				DE5ED5E02680F64800B4B44C /* UIStackableContainerView.swift in Sources */,
+				DE5ED5F52681223C00B4B44C /* UIStackableContainerViewConfiguration.swift in Sources */,
+				DE5ED5C32680B19300B4B44C /* UIStackableControllerError.swift in Sources */,
+				DE5ED54F268067AF00B4B44C /* ViewController.swift in Sources */,
+				DE5ED5A126809B0900B4B44C /* UIStackableConfiguration.swift in Sources */,
+				DE5ED58526806C7D00B4B44C /* UIStackableController.swift in Sources */,
+				DE5ED5D82680D80500B4B44C /* UIStackedItemsDatasource.swift in Sources */,
+				DE5ED5C82680B3F600B4B44C /* UIStackableConstants.swift in Sources */,
+				DE5ED5E5268120AD00B4B44C /* DefaultStackableItemConfiguration.swift in Sources */,
+				DEAE9D9D2682817600B8C2CF /* EampleColors.swift in Sources */,
+				DE5ED54B268067AF00B4B44C /* AppDelegate.swift in Sources */,
+				DE5ED5972680858400B4B44C /* UIBottomSheetView.swift in Sources */,
+				DE5ED58B2680700200B4B44C /* UIStackable.swift in Sources */,
+				DE5ED54D268067AF00B4B44C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5ED559268067B100B4B44C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEAE9D8826825C1100B8C2CF /* UIStackableMocks.swift in Sources */,
+				DEAE9D8026825AFC00B8C2CF /* UIStackedItemsDatasourceTests.swift in Sources */,
+				DEAE9D93268265B600B8C2CF /* UIStackableControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE5ED55F268067B100B4B44C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5ED546268067AF00B4B44C /* StackableView */;
+			targetProxy = DE5ED55E268067B100B4B44C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE5ED550268067AF00B4B44C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5ED551268067AF00B4B44C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5ED555268067B100B4B44C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5ED556268067B100B4B44C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE5ED56F268067B100B4B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE5ED570268067B100B4B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE5ED572268067B100B4B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156DBAEAA3793A46E39F56A2 /* Pods-StackableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinash.StackableView.StackableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE5ED573268067B100B4B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB584509D3BA4DB73670873 /* Pods-StackableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinash.StackableView.StackableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DE5ED575268067B100B4B44C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 297860DA048BFCF3FF1B8F9D /* Pods-StackableViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinash.StackableView.StackableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackableView.app/StackableView";
+			};
+			name = Debug;
+		};
+		DE5ED576268067B100B4B44C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 995F8DF7AFB320B6EBE70C48 /* Pods-StackableViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StackableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.avinash.StackableView.StackableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackableView.app/StackableView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5ED542268067AF00B4B44C /* Build configuration list for PBXProject "StackableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5ED56F268067B100B4B44C /* Debug */,
+				DE5ED570268067B100B4B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5ED571268067B100B4B44C /* Build configuration list for PBXNativeTarget "StackableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5ED572268067B100B4B44C /* Debug */,
+				DE5ED573268067B100B4B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5ED574268067B100B4B44C /* Build configuration list for PBXNativeTarget "StackableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5ED575268067B100B4B44C /* Debug */,
+				DE5ED576268067B100B4B44C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE5ED53F268067AF00B4B44C /* Project object */;
+}
